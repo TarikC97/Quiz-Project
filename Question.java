@@ -5,6 +5,7 @@ public class Question {
     private String opt2;
     private String opt3;
     private String opt4;
+    private String answer;
 
     public Question(int id, String question, String opt1, String opt2, String opt3, String opt4, String answer) {
         this.id = id;
@@ -16,7 +17,12 @@ public class Question {
         this.answer = answer;
     }
 
-    private String answer;
+    // Method used to allow object to be printed directly
+    @Override
+    public String toString() {
+        return "Question [id=" + id + ", question=" + question + ", opt1=" + opt1 + ", opt2=" + opt2 + ", opt3=" + opt3
+                + ", opt4=" + opt4 + ", answer=" + answer + "]";
+    }
 
     public int getId() {
         return id;
