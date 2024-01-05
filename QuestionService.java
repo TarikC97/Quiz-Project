@@ -27,6 +27,7 @@ public class QuestionService {
             // Making sure new answer is going to next index
             selection[i] = sc.nextLine();
             i++;
+            sc.close();
 
         }
         for (String sel : selection) {
